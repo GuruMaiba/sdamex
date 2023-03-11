@@ -1,0 +1,86 @@
+// UNIVERSAL STYLES
+// -----------------------
+@import "../globalStyle/_univStyle.scss";
+
+// Блок описания и блок ссылок
+%descLinks {
+    .desc {
+        white-space: pre-wrap;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    .links {
+        margin-top: 15px;
+        a {
+            font-size: 18px;
+            color: $mCrimson_m;
+            border-bottom: 1px dashed $mCrimson_m;
+            padding: 0 2px;
+            &:hover { border-bottom: 1px solid $mCrimson_m; }
+        }
+    }
+}
+
+%examLink {
+    position: relative;
+
+    .name {
+        position: relative;
+        color: $mBlue_d;
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: $mBG;
+        transition: all .3s ease;
+    }
+
+    .border {
+        position: absolute;
+        left: 50%;
+        width: 0%;
+        height: 2px;
+        background: $mCrimson_m;
+        transition: all .3s ease;
+    }
+
+    .repeat {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all .3s ease;
+    }
+
+    &:hover {
+        .name { color: $mCrimson_m; }
+        .border { width: 100%; left: 0; }
+        .repeat { bottom: -22px; }
+    }
+}
+
+%mainLink {
+    display: block;
+    font-family: 'Rubik';
+    font-size: 40px;
+    font-weight: 600;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 80px;
+    transition: all .3s ease;
+
+    hr {
+        width: 60%;
+        border: 0;
+        border-top: 3px solid $mBlue_d;
+        margin-bottom: 20px;
+        transition: all .5s ease;
+    }
+
+    &:hover {
+        color: $mCrimson_m;
+        hr {
+            width: 95%;
+            border-top-color: $mCrimson_m;
+        }
+    }
+}

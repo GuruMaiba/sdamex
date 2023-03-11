@@ -1,0 +1,65 @@
+.timer {
+    position: relative;
+    color: #fff;
+    $textShadow: 0 0 5px $mBlue_d;
+
+    .date {
+        position: absolute;
+        bottom: -15px;
+        left: 30px;
+        font-size: 22px;
+        font-style: italic;
+        text-shadow: 0 0 5px rgba(#000, 1);
+        opacity: .8;
+    }
+
+    ul {
+        margin: 0 auto;
+        list-style: none;
+        text-align: center;
+
+        li {
+            display: inline;
+            font-size: 100px;
+            font-family: 'Intro';
+            text-shadow: $textShadow;
+        }
+    }
+
+    .point {
+        position: relative;
+        animation: blink 1s ease infinite;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1.0;
+            text-shadow: $textShadow;
+        }
+
+        50% {
+            opacity: 0;
+            text-shadow: none;
+        }
+
+        100% {
+            opacity: 1.0;
+            text-shadow: $textShadow;
+        }
+    }
+}
+
+// #Date {
+//     font-family: 'Text';
+//     font-size: 50px;
+//     text-align: center;
+//     text-shadow: 0 0 5px #00c6ff;
+//     padding: 20px 0;
+//
+//     .timeEdit {
+//         width: 114px;
+//         border-bottom: 1px solid #fff;
+//     }
+// }

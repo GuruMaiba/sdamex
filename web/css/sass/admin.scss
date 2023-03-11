@@ -1,0 +1,55 @@
+@import "globalStyle/_variables.scss";
+@import "admin/_mixins.scss";
+@import "admin/_univStyle.scss";
+@import "_common.scss";
+
+.delete {
+    cursor: pointer;
+    color: red;
+}
+
+@import "admin/_user.scss";
+@import "admin/_course.scss";
+@import "admin/_webinar.scss";
+@import "admin/_exam.scss";
+@import "admin/_fullexam.scss";
+@import "admin/_theme.scss";
+@import "admin/_check.scss";
+
+.defaultAdminItem {
+    // position: relative;
+    // display: block;
+    // // width: 50%;
+    margin: 10px 0;
+    // padding: 10px;
+    // border: 1px solid #ccc;
+    // border-radius: 10px;
+    // background: #f5f5f5;
+
+    .name {
+        // font-size: 20px;
+    }
+
+    .delete {
+        position: absolute;
+        top: 9px;
+        right: calc(100% + 10px);
+        color: #cc0000;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background: rgba(#f5f5f5, .5);
+    }
+
+    &.publish {
+        background: rgba($mGreen, .1);
+
+        &:hover {
+            background: rgba($mGreen, .15);
+        }
+    }
+}

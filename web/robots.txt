@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /imperavi/
+Disallow: /site/
+Disallow: /closedoor/
+Disallow: /default/
+Host: https://sdamex.ru
+Sitemap: https://sdamex.ru/sitemap.xml

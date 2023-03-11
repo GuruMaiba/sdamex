@@ -1,0 +1,32 @@
+// UNIVERSAL STYLES
+// -----------------------
+@import "../globalStyle/_univStyle.scss";
+
+%littleItem {
+    .item {
+        display: inline-block;
+        text-decoration: none;
+        padding: 3px 8px;
+        margin-right: 3px;
+        border-radius: 5px;
+        border: 1px solid $mGray;
+        transition: all .2s ease;
+
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+            border-color: $mOrange_l;
+            background-color: $mOrange_l;
+        }
+
+        &.active {
+            color: #fff;
+            border-color: $mOrange_m;
+            background-color: $mOrange_m;
+            &:hover {
+                border-color: $mCrimson_l;
+                background-color: $mCrimson_l;
+            }
+        } // end active
+    } // end item
+}

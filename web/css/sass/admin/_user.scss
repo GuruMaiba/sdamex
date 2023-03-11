@@ -1,0 +1,82 @@
+.userPage {
+    .courses {
+        margin: 30px 0;
+        padding: 10px 0 15px 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        h1 { margin-bottom: 10px; }
+
+        .list {
+            .item {
+                position: relative;
+                display: inline-block;
+                padding: 5px 10px;
+                margin: 5px 5px 0 0;
+                border: 1px solid $mBlue_l;
+                border-radius: 5px;
+
+                .end {
+                    position: absolute;
+                    display: none;
+                    left: 0;
+                    bottom: calc(100% + 1px);
+                    input { width: 110px; }
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    color: #fff;
+                    border-color: $mOrange_l;
+                    background: $mOrange_l;
+                }
+
+                &.active {
+                    color: #fff;
+                    border-color: $mGreen;
+                    background: $mGreen;
+                    &:hover { .end {display:block;} }
+                }
+            }
+        } // end list
+    } // end courses
+
+    .teacher {
+        margin-top: 30px;
+
+        .specialization, .subjects {
+            margin-top: -10px;
+            padding-bottom: 20px;
+            @extend %littleItem;
+        } // end specialization
+    } // end teacher
+
+    .promoter {
+        margin-top: 30px;
+
+        .newCode {
+            width: 90%;
+            margin: 30px auto 0;
+        }
+
+        .codes {
+            width: 90%;
+            margin: 0 auto;
+
+            .code {
+                display: inline-block;
+                margin: 0 5px 10px 0;
+                padding: 5px;
+                border: 1px solid $mBlue_l;
+                border-radius: 5px;
+                transition: all .3s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #fff;
+                    border-color: $mOrange_l;
+                    background-color: $mOrange_l;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.searchTheme {
+    .list {
+        display: flex;
+        margin: 10px 0;
+        .item {
+            cursor: pointer;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border: 1px solid $mBlue_d;
+            &.active {
+                color: #fff;
+                background-color: $mBlue_l;
+            }
+        }
+    }
+    .btn {display:none;}
+    &.new .add {display: inline-block;}
+    &.edit .del {display: inline-block;}
+    &.hdn {
+        .item {
+            display: none;
+            &.view { display:block; }
+            &.active { display:block; }
+        }
+        &.new .add {display: none;}
+        &.edit .del {display: none;}
+    }
+}

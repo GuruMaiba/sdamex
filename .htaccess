@@ -1,0 +1,6 @@
+addDefaultCharset utf8
+DefaultLanguage ru-RU
+
+RewriteEngine on
+
+RewriteRule ^(.+)?$ /web/$1
